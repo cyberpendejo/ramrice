@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Place Order - RAM Rice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styling/order.css" />
+  
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Place Your Order</h2>
+
+  <form id="orderForm">
+    <label>Product</label>
+    <input type="text" id="product" name="product" readonly>
+
+    <label>First Name</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label>Last Name</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label>Contact Number</label>
+    <input type="text" id="mobile" name="contactNumber" required>
+
+    <label>Email Address</label>
+    <input type="email" id="mail" name="emailAddress" required>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</div>
+
+<script src="./scripting/submit.js"></script>
+<script src="./scripting/chosenProduct.js"></script>
+
+</body>
+
+</html>
+
+

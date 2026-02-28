@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RAM Rice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styling/home.css" />
+
+</head>
+
+<body>
+
+<header>
+  <img src="https://uploads.onecompiler.io/43zvnx5wm/44bc2fyd5/unnamed%20(1).jpg">
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('products')">Products</a>
+    <a onclick="showSection('prices')">Per Sack Prices</a>
+    <a onclick="showSection('perKilo')">Per Kilo Prices</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<div id="home" class="section active">
+  <h1>Welcome to RAM Rice</h1>
+  <img src="https://uploads.onecompiler.io/43zvnx5wm/44bc2fyd5/unnamed%20(1).jpg" width="200">
+</div>
+
+<!-- PRODUCTS -->
+<div id="products" class="section">
+  <h2>Kinds of Rice</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://uploads.onecompiler.io/43zvnx5wm/44bbn53nu/maharlika-super-special.png">
+      <h3>Maharlika Super Special</h3>
+    </div>
+    <div class="card">
+      <img src="https://uploads.onecompiler.io/43zvnx5wm/44bbn53nu/7450bb2e6cdc11151057cf29f8e08238.png">
+      <h3>Sinandomeng</h3>
+    </div>
+    <div class="card">
+      <img src="https://uploads.onecompiler.io/43zvnx5wm/44bbn53nu/3311-1-500x500.jpg">
+      <h3>Jasmine Rice</h3>
+    </div>
+    <div class="card">
+      <img src="https://uploads.onecompiler.io/43zvnx5wm/44bbn53nu/21922fe2857db08cc43e1544827d7a54.jpg">
+      <h3>Dinorado Rice</h3>
+    </div>
+    <div class="card">
+      <img src="https://uploads.onecompiler.io/43zvnx5wm/44bc3d6m4/3664-1-500x500.jpg">
+      <h3>Kuhaku Rice</h3>
+    </div>
+  </div>
+</div>
+
+<!-- PER SACK PRICES -->
+<div id="prices" class="section">
+  <h2>Rice Prices (per sack)</h2>
+  <div class="products">
+    <div class="card">
+      <h3>Maharlika</h3>
+      <p class="price">₱1,400</p>
+      <button onclick="orderNow('Maharlika ₱1,400 per sack')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Sinandomeng</h3>
+      <p class="price">₱1,300</p>
+      <button onclick="orderNow('Sinandomeng ₱1,300 per sack')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Jasmine</h3>
+      <p class="price">₱1,200</p>
+      <button onclick="orderNow('Jasmine ₱1,200 per sack')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Dinorado</h3>
+      <p class="price">₱1,100</p>
+      <button onclick="orderNow('Dinorado ₱1,100 per sack')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Kuhaku Rice</h3>
+      <p class="price">₱1,500</p>
+      <button onclick="orderNow('Kuhaku Rice ₱1,1500 per sack')">Order Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- PER KILO PRICES WITH IMAGE -->
+<div id="perKilo" class="section">
+  <h2>Rice Prices (per kilo)</h2>
+
+  <!-- Per kilo rice price image -->
+  <img src="https://uploads.onecompiler.io/43zvnx5wm/44bfbs3n5/wp-1475585290828.jpg" 
+       style="width:100%; max-width:600px; border-radius:10px; margin-bottom:20px;">
+
+  <div class="products">
+    <div class="card">
+      <h3>Maharlika</h3>
+      <p class="price">₱55 / kg</p>
+      <button onclick="orderNow('Maharlika ₱55 per kg')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Sinandomeng</h3>
+      <p class="price">₱52 / kg</p>
+      <button onclick="orderNow('Sinandomeng ₱52 per kg')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Jasmine</h3>
+      <p class="price">₱48 / kg</p>
+      <button onclick="orderNow('Jasmine ₱48 per kg')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Dinorado</h3>
+      <p class="price">₱50 / kg</p>
+      <button onclick="orderNow('Dinorado ₱50 per kg')">Order Now</button>
+    </div>
+    <div class="card">
+      <h3>Kuhaku Rice</h3>
+      <p class="price">₱60 / kg</p>
+      <button onclick="orderNow('Kuhaku Rice ₱60 per kg')">Order Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section">
+  <h2>About RAM Rice</h2>
+  <p>We are a trusted local supplier of quality rice.</p>
+  <p>Serving Catalunan Grande, Davao City.</p>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>📍 Catalunan Grande, Davao City</p>
+  <p>📞 09XX-XXX-XXXX</p>
+  <p>📧 ramrice@gmail.com</p>
+  <iframe src="https://www.google.com/maps?q=Catalunan%20Grande%20Davao%20City&output=embed"></iframe>
+</div>
+
+<footer>© 2026 RAM Rice</footer>
+
+<script src="./scripting/showSection.js"></script>
+<script src="./scripting/orderRedirect.js"></script>
+
+</body>
+</html>
